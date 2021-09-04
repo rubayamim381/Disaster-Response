@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Dancing+Script|Source+Sans+Pro:400,900&display=swap');
 /*Global styles*/
 *,
 *::before,
@@ -9,13 +9,15 @@
 }
 
 
-/* how we declare css variable */
+/* how we declare css variable 
+old font - Herr Von Muellerhoff
+    --body-font-color: #515151;*/
 :root{
     --main-font: 'Source Sans Pro', sans-serif;
-    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --secondary-font: 'Dancing Script', cursive;
     --body-font: 'Cabin', sans-serif;
     --main-font-color-dark: #252525;
-    --secondary-font-color: #c59d5f;
+    --secondary-font-color: #62B35E;
     --body-font-color: #515151;
 }
 
@@ -68,94 +70,6 @@ header{
     background-image: linear-gradient(to bottom, rgba(0,0,0,.5), transparent);
 }
 
-/*signup option
-  .form-control{
-  height: 40px;
-  box-shadow: none;
-  color: #969fa4;
-}
-
-  .form-control, .btn{
-      border-radius: 3px;
-  }
-.signup-form{
-  width: 400px;
-  margin: 0 auto;
-  padding: 30px 0;
-  background-color: #7d9db954;
-}
-.signup-form h2{
-  color: #636363;
-      margin: 0 0 15px;
-  position: relative;
-  text-align: center;
-  }
-.signup-form h2:before, .signup-form h2:after{
-  content: "";
-  height: 2px;
-  width: 30%;
-  background: #d4d4d4;
-  position: absolute;
-  top: 50%;
-  z-index: 2;
-}
-.signup-form h2:before{
-  left: 0;
-}
-.signup-form h2:after{
-  right: 0;
-}
-  .signup-form .hint-text{
-  color: #999;
-  margin-bottom: 30px;
-  text-align: center;
-}
-  .signup-form form{
-  color: #999;
-  border-radius: 3px;
-    margin-bottom: 15px;
-      background: #f2f3f7;
-      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-      padding: 30px;
-  }
-.signup-form .form-group{
-  margin-bottom: 20px;
-}
-.signup-form input[type="checkbox"]{
-  margin-top: 3px;
-}
-.signup-form .btn{
-      font-size: 16px;
-      font-weight: bold;
-  min-width: 140px;
-      outline: none !important;
-  }
-.signup-form .row div:first-child{
-  padding-right: 10px;
-}
-.signup-form .row div:last-child{
-  padding-left: 10px;
-}
-  .signup-form a{
-  color: #fff;
-  text-decoration: underline;
-}
-  .signup-form a:hover{
-  text-decoration: none;
-}
-.signup-form form a{
-  color: #5cb85c;
-  text-decoration: none;
-}
-.signup-form form a:hover{
-  text-decoration: underline;
-}
-
-.signup-form .message{
-  color: red;
-}*/
-
-/* update signup option */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 *:focus {
   outline: none;
@@ -164,167 +78,14 @@ header{
 body {
   margin: 0;
   padding: 0;
-  background: #DDD;
+  background: #ffffff/*#DDD*/;
   font-size: 16px;
   color: #222;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
-.login-box {
-  position: relative;
-  margin: 5% auto;
-  width: 600px;
-  height: 450px;
-  background: #FFF;
-  border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-}
 
-.left {
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-  padding: 40px;
-  width: 300px;
-  height: 400px;
-}
-
-h1 {
-  margin: 0 0 20px 0;
-  font-weight: 300;
-  font-size: 28px;
-  color: #218865
-}
-
-input[type="text"],
-input[type="password"] {
-  display: block;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  padding: 4px;
-  width: 220px;
-  height: 32px;
-  border: none;
-  border-bottom: 1px solid #AAA;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  transition: 0.2s ease;
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus {
-  border-bottom: 2px solid #16a085;
-  color: #16a085;
-  transition: 0.2s ease;
-}
-
-input[type="submit"] {
-  margin-top: 28px;
-  width: 120px;
-  height: 32px;
-  background: #16a085;
-  border: none;
-  border-radius: 2px;
-  color: #FFF;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: 0.1s ease;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover,
-input[type="submit"]:focus {
-  opacity: 0.8;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  transition: 0.1s ease;
-}
-
-input[type="submit"]:active {
-  opacity: 1;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  transition: 0.1s ease;
-}
-
-.or {
-  position: absolute;
-  top: 18rem;
-  left: 27.5rem;
-  width: 40px;
-  height: 40px;
-  background: #DDD;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  line-height: 40px;
-  text-align: center;
-}
-
-.right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  box-sizing: border-box;
-  padding: 40px;
-  width: 300px;
-  height: 400px;
-  background: url('https://goo.gl/YbktSj');
-  background-size: cover;
-  background-position: center;
-  border-radius: 0 2px 2px 0;
-}
-
-.right .loginwith {
-  display: block;
-  margin-bottom: 40px;
-  font-size: 28px;
-  color: #FFF;
-  text-align: center;
-}
-
-button.social-signin {
-  margin-bottom: 20px;
-  width: 220px;
-  height: 36px;
-  border: none;
-  border-radius: 2px;
-  color: #FFF;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  transition: 0.2s ease;
-  cursor: pointer;
-}
-
-button.social-signin:hover,
-button.social-signin:focus {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  transition: 0.2s ease;
-}
-
-button.social-signin:active {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  transition: 0.2s ease;
-}
-
-button.social-signin.facebook {
-  background: #32508E;
-}
-
-button.social-signin.twitter {
-  background: #55ACEE;
-}
-
-button.social-signin.google {
-  background: #DD4B39;
-}
-
-.login-box .message{
-  color: red;
-}
-
-/* signup option ends */
 
 .logo {
     width: 9.5%;
@@ -341,7 +102,7 @@ button.social-signin.google {
   justify-content: flex-start;
   position: fixed;
   background: #051b2573;
-  background-image: url("images/nasahero.jpg");
+  /*background-image: url("images/nasahero.jpg");
   /* opacity: 0.6; */
   margin-left: -10rem;
 }
@@ -427,12 +188,11 @@ button.social-signin.google {
     color: var(--secondary-font-color);
 }
 
-/*starting hero*/
-.hero{
-    margin: 7.2rem 0 0;
+.hero {
+    margin: 0rem 0 0;
     width: 100%;
-    height: 89vh;
-    /* background: url("images/nasahero.jpg") center repeat-x; */
+    height: 100vh;
+    background: url("images/photo1.jpg") center repeat-x;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -441,30 +201,16 @@ button.social-signin.google {
     align-items: center;
     justify-content: center;
     text-align: center;
-    animation: Hero 100s cubic-bezier(0.38, 0.58, 0.43, 0.74) infinite;
-
+    animation: mymove 30s infinite;
 }
 
-/*Animation for the slideshow images*/
- @keyframes Hero {
-  0%,100%{
-    background-image: url("images/nasahero.jpg");
-  }
-  /* 20%{
-      background-image: url("images/nasahero2.jpg");
-
-  }
-  40%{
-      background-image: url("images/nasahero3.jpg");
-  }
-  50%{
-      background-image: url("images/nasahero4.jpg");
-  } */
-  50%{
-    background-image: url("images/nasahero5.jpg");
-  }
+/* Standard syntax */
+@keyframes mymove {
+    25%  {  background-image:url("images/photo1.jpg");}
+    50%  { background-image:url("images/photo2.jpg");}
+    75%  { background-image:url("images/photo3.jpg");}
+    100% {background-image:url("images/photo4.jpg");}
 }
-
 
 
 .sub-headline{
@@ -795,6 +541,8 @@ footer{
   transform: translateY(-50%);
   margin: -8px 0rem 0rem 18rem;
 }
+
+
 
 
 /* Media queries */
