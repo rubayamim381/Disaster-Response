@@ -2,6 +2,4 @@
 2. to open a new branch - git branch branchname[any name]
 3. how to move to my branch- git checkout branchname
 4. how to transfer my branch to remote means github - 
-	git add .
-	git commit -m "pass a message"
-	git push origin branchname
+	git add .&&git commit -m "pass a message"&&git push origin branchname
