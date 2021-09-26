@@ -1,38 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <title>API Template</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="mapview.css" />
-
-    <!-- import the webpage's javascript file -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disaster Response</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="mapview.css">
   </head>
-  <body>
-    <h1> Disaster World View </h1>
+
+
+<body class="oen">
+<header>
+  <div class="container">
+
+    <!--Navigation Bar starts-->
+    <nav class="nav">
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </div>
+
+        <!--Navigation Bar logo-->
+      <a href="index.html" class="logo"><img src="/images/nasalogo.png" alt=""></a>
+
+        <!--Navigation Bar Lists e.g. menu, home etc-->
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="../index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="mapview.html" class="nav-link">Mapview</a>
+        </li>
+        <li class="nav-item">
+          <a href="#learn" class="nav-link">Learn</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">News</a>
+        </li>
+  </div>
+</header>
+  <!--Header ends-->    
+
+
+
+      <!-- Discover Our Story starts-->
+<section class="world-disaster">
+  <div class="container2 effect">
+    <div class="restaurant-info">
+
+      <!-- Restaurant description -->
+      <div class="restaurant-description">
+      <div class="global-headline">
+        <h2 class="sub-headline">
+          Disaster World View
+          </h2>
+                <h1 class="headline headline-dark">Your location is at: </h1>
+              </div>
+              <br>
+                  <p id="location"> </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    <!-- Discover Our Story ends-->
 
     
-    
-    Your current location is at :
-    
-    <br>
-    <div id="location"> </div>
-    <br>
-   <p>
-     Hello this is an worldview map where many natural disasters are being monitored and marked . 
-     You can use this to find the nearest disaster to find help for.
-   </p>
+    <section class="discover-the-dataset">
+  <div class="container">
+    <div class="data-description">
+
     <iframe src="https://worldview.earthdata.nasa.gov/?e=true&efs=true&efd=2021-05-03,2021-08-31&efc=dustHaze,manmade,seaLakeIce,severeStorms,snow,volcanoes,waterColor,wildfires&l=IMERG_Precipitation_Rate,Reference_Labels_15m,Reference_Features_15m,VIIRS_SNPP_CorrectedReflectance_TrueColor,MODIS_Terra_CorrectedReflectance_TrueColor&lg=false&s=90.3996,23.7133&t=2021-08-30-T08%3A00%3A00Z&em=true" role="application" sandbox="allow-modals allow-scripts allow-same-origin allow-forms allow-popups" width="100%" height="100%" allow="fullscreen; autoplay;" loading="lazy"></iframe>
+  </div>
+</div>
+</section>
 
     <!--- <input id="searchTerm" type="text" placeholder="Enter search term" />  --->
-    
-    <button id="search">
+    <section class="btn-style">
+      <div class="button-design">
+      <button class="buttonfx slidebottomleft" id="search">
       Look for disasters
     </button>
-    
+      </div>
+    </section>
+
+    <section class="world-disaster-list">
+      <div class="container2 effect">
+            <div class="restaurant-info">
+
+      <!-- Restaurant description -->
+      <div class="restaurant-description">
+            
     <p>
       Co-ordinates --> disaster type --> disaster time
     </p>
@@ -42,6 +104,60 @@
     <div id="content">
        
     </div>
+  </div>
+</div>
+      </div>
+    </section>
+  
+
+  <footer>
+  <div class="container" id="about">
+    <div class="back-to-top">
+      <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+    </div>
+    <div class="footer-content">
+      <div class="footer-content-about animate-top">
+        <h4>About The Disaster Response</h4>
+        <p>
+     Hello this is an worldview map where many natural disasters are being monitored and marked . 
+     You can use this to find the nearest disaster to find help for.
+        </p>
+      </div>
+
+      <div class="footer-content-divider animate-bottom">
+
+        <div class="media">
+          <h4>Follow along</h4>
+          <ul class="social-icons">
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+          </ul>
+        </div>
+
+        <div class="newsletter-container">
+          <h4>NewsLetter</h4>
+          <form class="newsletter-form" action="">
+            <input type="text" class="newsletter-input" placeholder="Your email address..." name="" value="">
+            <button class="newsletter-btn" type="submit">
+              <i class="fas fa-envelope"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
     <script src="mapview.js" defer></script>
   </body>
 </html>

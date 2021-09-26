@@ -13,7 +13,7 @@ if(navigator.geolocation)
     navigator.geolocation.getCurrentPosition(displayPos);
     
     function displayPos(HereNow){
-    document.querySelector('#location').innerHTML += "Longitude = " + HereNow.coords.longitude + " Latitude = " + HereNow.coords.latitude;
+    document.querySelector('#location').innerHTML += "Longitude = " + HereNow.coords.longitude + "<br> Latitude = " + HereNow.coords.latitude;
     }
 
 }
