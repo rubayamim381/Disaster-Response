@@ -537,9 +537,9 @@ footer{
   font-size: 1.6rem;
   padding: 1px .6rem;
   position: absolute;
-  top: 50%;
+  top: 70%;
   transform: translateY(-50%);
-  margin: -8px 0rem 0rem 18rem;
+  margin: -8px -10rem 0rem 10rem;
 }
 
 
@@ -677,7 +677,7 @@ footer{
   }
 
   .newsletter-btn{
-    margin: -8px 0rem 0rem 18rem;
+    margin: -8px -2rem 0rem 18rem;
   }
 }
 

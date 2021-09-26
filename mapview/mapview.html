@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <title>API Template</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="mapview.css" />
-
-    <!-- import the webpage's javascript file -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disaster Response</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="mapview.css">
   </head>
-  <body>
 
-    <header>
+
+<body class="oen">
+<header>
   <div class="container">
 
     <!--Navigation Bar starts-->
@@ -24,15 +25,15 @@
       </div>
 
         <!--Navigation Bar logo-->
-      <a href="index.html" class="logo"><img src="images/nasalogo.png" alt=""></a>
+      <a href="index.html" class="logo"><img src="/images/nasalogo.png" alt=""></a>
 
         <!--Navigation Bar Lists e.g. menu, home etc-->
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="index.html" class="nav-link">Home</a>
+          <a href="../index.html" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-          <a href="#mapview" class="nav-link">Mapview</a>
+          <a href="mapview.html" class="nav-link">Mapview</a>
         </li>
         <li class="nav-item">
           <a href="#learn" class="nav-link">Learn</a>
@@ -40,39 +41,60 @@
         <li class="nav-item">
           <a href="#" class="nav-link">News</a>
         </li>
-
-        <!-- <li class="nav-item">
-          <a href="#" class="nav-link">Contact</a>
-        </li> -->
-      </ul>
-        <!--Completing Navigation Bar lists-->
-    </nav>
-      <!--Navigation Bar ends-->
-
-
   </div>
 </header>
-    <h1> Disaster World View </h1>
+  <!--Header ends-->    
+
+
+
+      <!-- Discover Our Story starts-->
+<section class="world-disaster">
+  <div class="container2 effect">
+    <div class="restaurant-info">
+
+      <!-- Restaurant description -->
+      <div class="restaurant-description">
+      <div class="global-headline">
+        <h2 class="sub-headline">
+          Disaster World View
+          </h2>
+                <h1 class="headline headline-dark">Your location is at: </h1>
+              </div>
+              <br>
+                  <p id="location"> </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    <!-- Discover Our Story ends-->
 
     
-    
-    Your current location is at :
-    
-    <br>
-    <div id="location"> </div>
-    <br>
-   <p>
-     Hello this is an worldview map where many natural disasters are being monitored and marked . 
-     You can use this to find the nearest disaster to find help for.
-   </p>
+    <section class="discover-the-dataset">
+  <div class="container">
+    <div class="data-description">
+
     <iframe src="https://worldview.earthdata.nasa.gov/?e=true&efs=true&efd=2021-05-03,2021-08-31&efc=dustHaze,manmade,seaLakeIce,severeStorms,snow,volcanoes,waterColor,wildfires&l=IMERG_Precipitation_Rate,Reference_Labels_15m,Reference_Features_15m,VIIRS_SNPP_CorrectedReflectance_TrueColor,MODIS_Terra_CorrectedReflectance_TrueColor&lg=false&s=90.3996,23.7133&t=2021-08-30-T08%3A00%3A00Z&em=true" role="application" sandbox="allow-modals allow-scripts allow-same-origin allow-forms allow-popups" width="100%" height="100%" allow="fullscreen; autoplay;" loading="lazy"></iframe>
+  </div>
+</div>
+</section>
 
     <!--- <input id="searchTerm" type="text" placeholder="Enter search term" />  --->
-    
-    <button id="search">
+    <section class="btn-style">
+      <div class="button-design">
+      <button class="buttonfx slidebottomleft" id="search">
       Look for disasters
     </button>
-    
+      </div>
+    </section>
+
+    <section class="world-disaster-list">
+      <div class="container2 effect">
+            <div class="restaurant-info">
+
+      <!-- Restaurant description -->
+      <div class="restaurant-description">
+            
     <p>
       Co-ordinates --> disaster type --> disaster time
     </p>
@@ -82,17 +104,23 @@
     <div id="content">
        
     </div>
-        <footer>
+  </div>
+</div>
+      </div>
+    </section>
+  
+
+  <footer>
   <div class="container" id="about">
     <div class="back-to-top">
       <a href="#hero"><i class="fas fa-chevron-up"></i></a>
     </div>
     <div class="footer-content">
       <div class="footer-content-about animate-top">
-        <h4>About The Earth Explorer</h4>
-        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+        <h4>About The Disaster Response</h4>
         <p>
-          We are a small team trying to make all of NASA's work about earth more accessible and easily understandable to general public through small bite sized interactive tutorials.
+     Hello this is an worldview map where many natural disasters are being monitored and marked . 
+     You can use this to find the nearest disaster to find help for.
         </p>
       </div>
 
