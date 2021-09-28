@@ -37,7 +37,7 @@ async function sendApiRequest() {
 function useApiData(data) {
     
     for(var i=0;i<20;i++){
-    document.querySelector("#content").innerHTML +="[" + data.features[i].geometry.coordinates[0] +" , "+ data.features[i].geometry.coordinates[1] + "]" ;
-    document.querySelector("#content").innerHTML += " ---> "+ data.features[i].properties.categories[0].title +" --> " + data.features[i].properties.date + "<br><br>" ;
+    document.querySelector("#content").innerHTML +="<td>" + data.features[i].geometry.coordinates[0] +" , "+ data.features[i].geometry.coordinates[1] + 
+    "</td><td> "+ data.features[i].properties.categories[0].title +"</td> <td>" + data.features[i].properties.date + "</td>" ;
     }
 }

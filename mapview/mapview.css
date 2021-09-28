@@ -390,7 +390,7 @@ body {
 }
 
 .restaurant-description{
-  margin-bottom: 3rem;
+  margin: 3rem;
 
 }
 
@@ -450,6 +450,17 @@ body {
 
 .discover-the-dataset{
   padding: 0;
+}
+
+.discover-our-story
+{
+  margin: -13rem 0 0rem;
+}
+
+.hello
+{
+  font-family: var(--main-font);
+  font-size: x-large;
 }
 
 #myVideo {
@@ -530,7 +541,7 @@ padding: 16px;
 
 .world-disaster-list
 {
-  margin: 0;
+  margin: -5rem 0 0rem;
 }
 
 .container3{
@@ -540,6 +551,7 @@ padding: 16px;
     padding: 0 2.4rem;
     background: #fff;
 }
+
 
 /* Footer */
 footer{
@@ -642,7 +654,54 @@ footer{
 }
 
 
+/*world disaster list*/
 
+/* Table Styles */
+
+.table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+
+.fl-table {
+  font-family: var(--secondary-font);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 15px;      
+    font-family: var(--body-font);
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
 
 /* Media queries */
 
@@ -760,12 +819,6 @@ footer{
 
   }
 
-  /* .footer-content-divider{
-    display: flex;
-    justify-content: space-between;
-
-  } */
-
   .social-media
   .newsLetter-form{
     width: 100%;
@@ -780,6 +833,8 @@ footer{
   .newsletter-btn{
     margin: -8px -2rem 0rem 18rem;
   }
+
+
 }
 
 
@@ -845,6 +900,8 @@ footer{
     opacity: 0;
     transform: translateY(-1rem);
   }
+
+
 }
 
 iframe {
