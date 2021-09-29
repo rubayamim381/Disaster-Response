@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "nasa-space-app",
-    "slug": "nasa-space-app",
+    "name": "Disaster Response",
+    "slug": "DisasterResponse",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,10 +20,12 @@
       "supportsTablet": true
     },
     "android": {
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.muhammadrifat.Disaster_Response"
     },
     "web": {
       "favicon": "./assets/favicon.png"
