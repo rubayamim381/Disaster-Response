@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="mapview/mapview.css">
+    <link rel="stylesheet" href="mapview.css">
     <title>Document</title>
     <style>
         .help:hover{
@@ -20,35 +20,37 @@
     </style>
 </head>
 <body>
-    <header class="m-5">
-        <div class="container">
-      
-          <!--Navigation Bar starts-->
-          <nav class="nav">
-            <div class="menu-toggle">
-              <i class="fas fa-bars"></i>
-              <i class="fas fa-times"></i>
-            </div>
-      
-              <!--Navigation Bar logo-->
-            <a href="index.html" class="logo"><img src="images/nasalogo.png" alt=""></a>
-      
-              <!--Navigation Bar Lists e.g. menu, home etc-->
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
+   <Header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><img src="images/nasalogo.png" alt=""></a>
+                  </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a href="mapview.html" class="nav-link">Mapview</a>
+                <a class="nav-link" href="mapview/mapview.html">Mapview</a>
               </li>
               <li class="nav-item">
-                <a href="#learn" class="nav-link">Learn</a>
+                <a class="nav-link" href="send_aid.html">Send Aid</a>
               </li>
-              <li class="nav-item">
-                <a href="send_aid.html" class="nav-link">Send Aid</a>
-              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-      </header>
+      </nav>
+   </Header>
     <Main>
         <div class="border border-info container mt-3 rounded-pill">
             <div class="d-md-flex justify-content-center px-5 py-5">
