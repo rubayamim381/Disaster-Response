@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="mapview/mapview.css">
     <title>Document</title>
     <style>
         .help:hover{
@@ -13,18 +14,55 @@
             cursor: pointer;
             box-shadow: 7px 7px 7px gray;
         }
+        ul>li{
+            font-size: 25px;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+      
+          <!--Navigation Bar starts-->
+          <nav class="nav">
+            <div class="menu-toggle">
+              <i class="fas fa-bars"></i>
+              <i class="fas fa-times"></i>
+            </div>
+      
+              <!--Navigation Bar logo-->
+            <a href="index.html" class="logo"><img src="../images/nasalogo.png" alt=""></a>
+      
+              <!--Navigation Bar Lists e.g. menu, home etc-->
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="../index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="mapview.html" class="nav-link">Mapview</a>
+              </li>
+              <li class="nav-item">
+                <a href="#learn" class="nav-link">Learn</a>
+              </li>
+              <li class="nav-item">
+                <a href="../send_aid.html" class="nav-link">Send Aid</a>
+              </li>
+        </div>
+      </header>
     <Main>
         <div class="border border-info container mt-3 rounded-pill">
             <div class="d-md-flex justify-content-center px-5 py-5">
-                <h3 class="me-4 text-primary">
-                    Disaster Type: Wildfire 
-                </h3>
-                <h3 class="text-danger">
-                    Location: [-121.619186074, 39.188019314]
-                </h3>
+                <div>
+                    <h3 class="me-4 text-primary">
+                        Disaster Type: Wildfire 
+                    </h3>
+                </div>
+                <div>
+                    <h3 class="text-danger">
+                        Location: [-121.619186074, 39.188019314]
+                    </h3>
+                </div>
+               
             </div>
             <ul style="list-style-type: none;">
                 <li>Water Required: 400 gallon</li>
@@ -44,12 +82,17 @@
         <!-- 2nd One  -->
         <div class="border border-info container mt-3 rounded-pill">
             <div class="d-md-flex justify-content-center px-5 py-5">
-                <h3 class="me-4 text-primary">
-                    Disaster Type: Tropical Storm Victo 
-                </h3>
-                <h3 class="text-danger">
-                    Location: [ -25.5, 8.3 ]
-                </h3>
+                <div>
+                    <h3 class="me-4 text-primary">
+                        Disaster Type: Tropical Storm Victo 
+                    </h3>
+                </div>
+                <div>
+                    <h3 class="text-danger">
+                        Location: [ -25.5, 8.3 ]
+                    </h3>
+                </div>
+               
             </div>
             <ul style="list-style-type: none;">
                 <li>Water Required: 400 gallon</li>
@@ -69,12 +112,18 @@
         <!-- 3rd One  -->
         <div class="border border-info container mt-3 rounded-pill">
             <div class="d-md-flex justify-content-center px-5 py-5">
-                <h3 class="me-4 text-primary">
-                    Disaster Type: Wildfire, California - United State 
-                </h3>
-                <h3 class="text-danger">
-                    Location: [ -118.664197288, 36.090993645 ]
-                </h3>
+                
+                <div>
+                    <h3 class="me-4 text-primary">
+                        Disaster Type: Wildfire, California - United State 
+                    </h3>
+                </div>
+                <div>
+                    <h3 class="text-danger">
+                        Location: [ -118.664197288, 36.090993645 ]
+                    </h3>
+                </div>
+                
             </div>
             <ul style="list-style-type: none;">
                 <li>Water Required: 400 gallon</li>
@@ -94,12 +143,17 @@
         <!-- 4th one -->
         <div class="border border-info container mt-3 rounded-pill">
             <div class="d-md-flex justify-content-center px-5 py-5">
-                <h3 class="me-4 text-primary">
-                    Disaster Type: Tropical Storm Gulab 
-                </h3>
-                <h3 class="text-danger">
-                    Location: [ 92.1, 18.8 ]
-                </h3>
+                <div>
+                    <h3 class="me-4 text-primary">
+                        Disaster Type: Tropical Storm Gulab 
+                    </h3>
+                </div>
+                <div>
+                    <h3 class="text-danger">
+                        Location: [ 92.1, 18.8 ]
+                    </h3>
+                </div>
+                
             </div>
             <ul style="list-style-type: none;">
                 <li>Water Required: 400 gallon</li>
