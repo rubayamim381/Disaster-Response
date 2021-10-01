@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="mapview.css">
     <title>Document</title>
     <style>
-        .help:hover{
+        .help:hover {
             transform: scale(1.10);
             cursor: pointer;
             box-shadow: 7px 7px 7px gray;
         }
-        ul>li{
+
+        ul>li {
             font-size: 25px;
         }
     </style>
 </head>
+
 <body>
-   <Header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="images/nasalogo.png" alt="" height="50px" width="50px"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="mapview/mapview.html">Mapview</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="send_aid.html">Send Aid</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-   </Header>
+    <Header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <div>
+                    <a class="navbar-brand" href="#"><img src="images/nasalogo.png" alt="" height="50px"
+                            width="50px"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="mapview/mapview.html">Mapview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="send_aid.html">Send Aid</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </Header>
     <Main>
         <div class="border border-info container mt-3 rounded-pill">
             <div class="d-md-flex justify-content-center px-5 py-5">
                 <div>
                     <h3 class="me-4 text-primary">
-                        Disaster Type: Wildfire 
+                        Disaster Type: Wildfire
                     </h3>
                 </div>
                 <div>
@@ -57,7 +63,7 @@
                         Location: [-121.619186074, 39.188019314]
                     </h3>
                 </div>
-               
+
             </div>
             <ul style="list-style-type: none;">
                 <li>Water Required: 400 gallon</li>
@@ -65,13 +71,19 @@
             </ul>
             <!-- Helping Options -->
             <div class="row px-5 py-5 justify-content-center">
-                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2"> <h4 class=" text-center">Send Money</h4></div>
-                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2"><h4 class="text-center">
-                    Send Volunteers
-                </h4></div>
-                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2"><h4 class="text-center">
-                    Send Resources
-                </h4></div>
+                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2">
+                    <h4 class=" text-center">Send Money</h4>
+                </div>
+                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2">
+                    <h4 class="text-center">
+                        Send Volunteers
+                    </h4>
+                </div>
+                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2">
+                    <h4 class="text-center">
+                        Send Resources
+                    </h4>
+                </div>
             </div>
         </div>
         <!-- 2nd One  -->
@@ -79,7 +91,7 @@
             <div class="d-md-flex justify-content-center px-5 py-5">
                 <div>
                     <h3 class="me-4 text-primary">
-                        Disaster Type: Tropical Storm Victo 
+                        Disaster Type: Tropical Storm Victo
                     </h3>
                 </div>
                 <div>
@@ -87,7 +99,7 @@
                         Location: [ -25.5, 8.3 ]
                     </h3>
                 </div>
-               
+
             </div>
             <ul style="list-style-type: none;">
                 <li>Water Required: 400 gallon</li>
@@ -95,22 +107,28 @@
             </ul>
             <!-- Helping Options -->
             <div class="row px-5 py-5 justify-content-center">
-                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2"> <h4 class=" text-center">Send Money</h4></div>
-                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2"><h4 class="text-center">
-                    Send Volunteers
-                </h4></div>
-                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2"><h4 class="text-center">
-                    Send Resources
-                </h4></div>
+                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2">
+                    <h4 class=" text-center">Send Money</h4>
+                </div>
+                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2">
+                    <h4 class="text-center">
+                        Send Volunteers
+                    </h4>
+                </div>
+                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2">
+                    <h4 class="text-center">
+                        Send Resources
+                    </h4>
+                </div>
             </div>
         </div>
         <!-- 3rd One  -->
         <div class="border border-info container mt-3 rounded-pill">
             <div class="d-md-flex justify-content-center px-5 py-5">
-                
+
                 <div>
                     <h3 class="me-4 text-primary">
-                        Disaster Type: Wildfire, California - United State 
+                        Disaster Type: Wildfire, California - United State
                     </h3>
                 </div>
                 <div>
@@ -118,7 +136,7 @@
                         Location: [ -118.664197288, 36.090993645 ]
                     </h3>
                 </div>
-                
+
             </div>
             <ul style="list-style-type: none;">
                 <li>Water Required: 400 gallon</li>
@@ -126,13 +144,19 @@
             </ul>
             <!-- Helping Options -->
             <div class="row px-5 py-5 justify-content-center">
-                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2"> <h4 class=" text-center">Send Money</h4></div>
-                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2"><h4 class="text-center">
-                    Send Volunteers
-                </h4></div>
-                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2"><h4 class="text-center">
-                    Send Resources
-                </h4></div>
+                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2">
+                    <h4 class=" text-center">Send Money</h4>
+                </div>
+                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2">
+                    <h4 class="text-center">
+                        Send Volunteers
+                    </h4>
+                </div>
+                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2">
+                    <h4 class="text-center">
+                        Send Resources
+                    </h4>
+                </div>
             </div>
         </div>
         <!-- 4th one -->
@@ -140,7 +164,7 @@
             <div class="d-md-flex justify-content-center px-5 py-5">
                 <div>
                     <h3 class="me-4 text-primary">
-                        Disaster Type: Tropical Storm Gulab 
+                        Disaster Type: Tropical Storm Gulab
                     </h3>
                 </div>
                 <div>
@@ -148,7 +172,7 @@
                         Location: [ 92.1, 18.8 ]
                     </h3>
                 </div>
-                
+
             </div>
             <ul style="list-style-type: none;">
                 <li>Water Required: 400 gallon</li>
@@ -156,17 +180,26 @@
             </ul>
             <!-- Helping Options -->
             <div class="row px-5 py-5 justify-content-center">
-                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2"> <h4 class=" text-center">Send Money</h4></div>
-                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2"><h4 class="text-center">
-                    Send Volunteers
-                </h4></div>
-                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2"><h4 class="text-center">
-                    Send Resources
-                </h4></div>
+                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2">
+                    <h4 class=" text-center">Send Money</h4>
+                </div>
+                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2">
+                    <h4 class="text-center">
+                        Send Volunteers
+                    </h4>
+                </div>
+                <div class="help col-md-3 border border-3 rounded-pill border-success px-5 py-4 mx-2">
+                    <h4 class="text-center">
+                        Send Resources
+                    </h4>
+                </div>
             </div>
         </div>
     </Main>
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
