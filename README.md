@@ -18,8 +18,10 @@ Our platform solves this issue , as the first volunteers fills up everyone on th
 
 Put it short , it means help that comes faster , more efficient and where its needed the most.
 
+Our website link: https://rubayamim381.github.io/Disaster-Response/ 
+
 ## Technical parts
 
 We are using geo-data , NASA's EONET API for finding out the disasters as they hit in near real time . A website provides a unified platform for every govt and non-govt personal on the rescue and relief missions more cohesiveness and efficiency . 
 
-Link: https://rubayamim381.github.io/Disaster-Response/ 
+
