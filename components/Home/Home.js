@@ -7,7 +7,7 @@ export default function Home({ navigation }) {
     return (
         <ScrollView style={styles.container}>
             {/* header image*/}
-            <ImageBackground source={{ uri: 'https://www.nasa.gov/sites/default/files/thumbnails/image/fires-smoke-hurricanes.jpg' }} style={styles.image} >
+            <ImageBackground source={{ uri: 'https://i.ibb.co/WgGGcWN/fires-smoke-hurricanes.jpg' }} style={styles.image} >
                 <Text style={styles.text}>Welcome To {'\n'} Disaster Response</Text>
             </ImageBackground>
 
@@ -28,7 +28,7 @@ export default function Home({ navigation }) {
 
             {/* Mapview section */}
             <View style={{ marginVertical: 30, alignItems: 'center', padding: 8}}>
-                <Image source={{ uri: 'https://rubayamim381.github.io/ghorardim/images/png1.png' }} style={{ width: 200, height: 159, marginBottom: 20 }} />
+                <Image source={{ uri: 'https://i.ibb.co/s9kZ1H4/png1.png' }} style={{ width: 200, height: 159, marginBottom: 20 }} />
                 <Text style={styles.headingText}>Mapview</Text>
                 <Text style={styles.headingText}>For Nearby Disaster</Text>
                 <Text style={styles.paragraphText}>
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
         height: 300
     },
     text: {
-        color: 'cyan',
+        color: 'lightgreen',
         fontSize: 30,
         fontWeight: 'bold',
         textAlign: 'center',

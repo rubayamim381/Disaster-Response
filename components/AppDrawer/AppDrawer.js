@@ -6,9 +6,9 @@ import {
   DrawerItem,
 } from '@react-navigation/drawer';
 import Home from '../Home/Home';
-import Learn from '../Learn/Learn';
 import News from '../News/News';
 import MapView from '../News/MapView/MapView';
+import LookDisaster from '../LookDisaster/LookDisaster';
 
 function CustomDrawerContent(props) {
   return (
@@ -31,7 +31,7 @@ export function AppDrawer() {
     >
       <Drawer.Screen name="Home" component={Home} />
       <Drawer.Screen name="MapView" component={MapView} />
-      <Drawer.Screen name="Learn" component={Learn} />
+      <Drawer.Screen name="Look For Disasters" component={LookDisaster} />
       <Drawer.Screen name="News" component={News} />
     </Drawer.Navigator>
   );
